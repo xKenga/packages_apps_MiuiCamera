@@ -9,7 +9,7 @@ packageInfo:
   renameManifestPackage: null
 sdkInfo:
   minSdkVersion: '19'
-  targetSdkVersion: '@integer/target_sdk_version'
+  targetSdkVersion: '26'
 sharedLibrary: false
 unknownFiles: {}
 usesFramework:
