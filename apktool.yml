@@ -15,7 +15,6 @@ unknownFiles: {}
 usesFramework:
   ids:
   - 1
-  - 16
   tag: null
 version: 2.3.1
 versionInfo:
