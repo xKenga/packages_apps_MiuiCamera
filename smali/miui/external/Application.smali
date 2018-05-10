@@ -1,4 +1,4 @@
-.class public Lmiui/external/Application;
+.class public Landroid/app/Application;
 .super Landroid/app/Application;
 .source "SourceFile"
 
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Landroid/app/Application;-><init>()V
 
     .line 52
-    invoke-direct {p0}, Lmiui/external/Application;->g()Z
+    invoke-direct {p0}, Landroid/app/Application;->g()Z
 
     move-result v0
 
@@ -31,7 +31,7 @@
 
     .line 55
     :cond_0
-    invoke-direct {p0}, Lmiui/external/Application;->f()Z
+    invoke-direct {p0}, Landroid/app/Application;->f()Z
 
     move-result v0
 
@@ -44,7 +44,7 @@
     :cond_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lmiui/external/Application;->h:Z
+    iput-boolean v0, p0, Landroid/app/Application;->h:Z
 
     .line 59
     return-void
@@ -232,7 +232,7 @@
     .line 87
     const-string/jumbo v1, "initialize"
 
-    invoke-direct {p0, v1, v0}, Lmiui/external/Application;->e(Ljava/lang/String;I)V
+    invoke-direct {p0, v1, v0}, Landroid/app/Application;->e(Ljava/lang/String;I)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -244,7 +244,7 @@
     move-exception v0
 
     .line 91
-    invoke-direct {p0, v0}, Lmiui/external/Application;->d(Ljava/lang/Throwable;)V
+    invoke-direct {p0, v0}, Landroid/app/Application;->d(Ljava/lang/Throwable;)V
 
     .line 92
     return v6
@@ -289,7 +289,7 @@
     move-result-object v1
 
     .line 66
-    const-class v2, Lmiui/external/Application;
+    const-class v2, Landroid/app/Application;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -319,7 +319,7 @@
     move-exception v0
 
     .line 73
-    invoke-direct {p0, v0}, Lmiui/external/Application;->d(Ljava/lang/Throwable;)V
+    invoke-direct {p0, v0}, Landroid/app/Application;->d(Ljava/lang/Throwable;)V
 
     .line 74
     return v4
@@ -410,7 +410,7 @@
     .line 108
     const-string/jumbo v1, "start"
 
-    invoke-direct {p0, v1, v0}, Lmiui/external/Application;->e(Ljava/lang/String;I)V
+    invoke-direct {p0, v1, v0}, Landroid/app/Application;->e(Ljava/lang/String;I)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -422,7 +422,7 @@
     move-exception v0
 
     .line 112
-    invoke-direct {p0, v0}, Lmiui/external/Application;->d(Ljava/lang/Throwable;)V
+    invoke-direct {p0, v0}, Landroid/app/Application;->d(Ljava/lang/Throwable;)V
 
     .line 113
     return v6
@@ -442,7 +442,7 @@
     invoke-super {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V
 
     .line 162
-    iget-boolean v0, p0, Lmiui/external/Application;->h:Z
+    iget-boolean v0, p0, Landroid/app/Application;->h:Z
 
     if-nez v0, :cond_0
 
@@ -451,7 +451,7 @@
 
     .line 165
     :cond_0
-    invoke-direct {p0}, Lmiui/external/Application;->h()Z
+    invoke-direct {p0}, Landroid/app/Application;->h()Z
 
     move-result v0
 
@@ -462,27 +462,27 @@
 
     .line 168
     :cond_1
-    invoke-virtual {p0}, Lmiui/external/Application;->onCreateApplicationDelegate()Lmiui/external/ApplicationDelegate;
+    invoke-virtual {p0}, Landroid/app/Application;->onCreateApplicationDelegate()Lmiui/external/ApplicationDelegate;
 
     move-result-object v0
 
-    iput-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iput-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     .line 169
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     if-eqz v0, :cond_2
 
     .line 170
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
-    invoke-virtual {v0, p0}, Lmiui/external/ApplicationDelegate;->G(Lmiui/external/Application;)V
+    invoke-virtual {v0, p0}, Lmiui/external/ApplicationDelegate;->G(Landroid/app/Application;)V
 
     .line 172
     :cond_2
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lmiui/external/Application;->i:Z
+    iput-boolean v0, p0, Landroid/app/Application;->i:Z
 
     .line 173
     return-void
@@ -548,12 +548,12 @@
 
     .prologue
     .line 232
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     if-eqz v0, :cond_0
 
     .line 233
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     invoke-virtual {v0, p1}, Lmiui/external/ApplicationDelegate;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -563,7 +563,7 @@
 
     .line 235
     :cond_0
-    invoke-virtual {p0, p1}, Lmiui/external/Application;->i(Landroid/content/res/Configuration;)V
+    invoke-virtual {p0, p1}, Landroid/app/Application;->i(Landroid/content/res/Configuration;)V
 
     goto :goto_0
 .end method
@@ -573,7 +573,7 @@
 
     .prologue
     .line 177
-    iget-boolean v0, p0, Lmiui/external/Application;->i:Z
+    iget-boolean v0, p0, Landroid/app/Application;->i:Z
 
     if-nez v0, :cond_0
 
@@ -582,12 +582,12 @@
 
     .line 180
     :cond_0
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     if-eqz v0, :cond_1
 
     .line 181
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     invoke-virtual {v0}, Lmiui/external/ApplicationDelegate;->onCreate()V
 
@@ -597,7 +597,7 @@
 
     .line 183
     :cond_1
-    invoke-virtual {p0}, Lmiui/external/Application;->j()V
+    invoke-virtual {p0}, Landroid/app/Application;->j()V
 
     goto :goto_0
 .end method
@@ -617,12 +617,12 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     if-eqz v0, :cond_0
 
     .line 207
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     invoke-virtual {v0}, Lmiui/external/ApplicationDelegate;->onLowMemory()V
 
@@ -632,7 +632,7 @@
 
     .line 209
     :cond_0
-    invoke-virtual {p0}, Lmiui/external/Application;->k()V
+    invoke-virtual {p0}, Landroid/app/Application;->k()V
 
     goto :goto_0
 .end method
@@ -642,12 +642,12 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     if-eqz v0, :cond_0
 
     .line 194
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     invoke-virtual {v0}, Lmiui/external/ApplicationDelegate;->onTerminate()V
 
@@ -657,7 +657,7 @@
 
     .line 196
     :cond_0
-    invoke-virtual {p0}, Lmiui/external/Application;->l()V
+    invoke-virtual {p0}, Landroid/app/Application;->l()V
 
     goto :goto_0
 .end method
@@ -667,12 +667,12 @@
 
     .prologue
     .line 219
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     if-eqz v0, :cond_0
 
     .line 220
-    iget-object v0, p0, Lmiui/external/Application;->g:Lmiui/external/ApplicationDelegate;
+    iget-object v0, p0, Landroid/app/Application;->g:Lmiui/external/ApplicationDelegate;
 
     invoke-virtual {v0, p1}, Lmiui/external/ApplicationDelegate;->onTrimMemory(I)V
 
@@ -682,7 +682,7 @@
 
     .line 222
     :cond_0
-    invoke-virtual {p0, p1}, Lmiui/external/Application;->m(I)V
+    invoke-virtual {p0, p1}, Landroid/app/Application;->m(I)V
 
     goto :goto_0
 .end method

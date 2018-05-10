@@ -1,5 +1,5 @@
 .class public Lcom/android/camera/CameraAppImpl;
-.super Lmiui/external/Application;
+.super Landroid/app/Application;
 .source "CameraAppImpl.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 26
-    invoke-direct {p0}, Lmiui/external/Application;-><init>()V
+    invoke-direct {p0}, Landroid/app/Application;-><init>()V
 
     return-void
 .end method

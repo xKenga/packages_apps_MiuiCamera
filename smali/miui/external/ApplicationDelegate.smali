@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private r:Lmiui/external/Application;
+.field private r:Landroid/app/Application;
 
 
 # direct methods
@@ -26,12 +26,12 @@
 
 
 # virtual methods
-.method G(Lmiui/external/Application;)V
+.method G(Landroid/app/Application;)V
     .locals 0
 
     .prologue
     .line 49
-    iput-object p1, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iput-object p1, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
     .line 50
     invoke-virtual {p0, p1}, Lmiui/external/ApplicationDelegate;->attachBaseContext(Landroid/content/Context;)V
@@ -45,9 +45,9 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
-    invoke-virtual {v0, p1}, Lmiui/external/Application;->i(Landroid/content/res/Configuration;)V
+    invoke-virtual {v0, p1}, Landroid/app/Application;->i(Landroid/content/res/Configuration;)V
 
     .line 92
     return-void
@@ -58,9 +58,9 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
-    invoke-virtual {v0}, Lmiui/external/Application;->j()V
+    invoke-virtual {v0}, Landroid/app/Application;->j()V
 
     .line 68
     return-void
@@ -71,9 +71,9 @@
 
     .prologue
     .line 106
-    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
-    invoke-virtual {v0}, Lmiui/external/Application;->k()V
+    invoke-virtual {v0}, Landroid/app/Application;->k()V
 
     .line 107
     return-void
@@ -84,9 +84,9 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
-    invoke-virtual {v0}, Lmiui/external/Application;->l()V
+    invoke-virtual {v0}, Landroid/app/Application;->l()V
 
     .line 78
     return-void
@@ -97,9 +97,9 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
-    invoke-virtual {v0, p1}, Lmiui/external/Application;->m(I)V
+    invoke-virtual {v0, p1}, Landroid/app/Application;->m(I)V
 
     .line 127
     return-void
@@ -110,9 +110,9 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
-    invoke-virtual {v0, p1}, Lmiui/external/Application;->registerComponentCallbacks(Landroid/content/ComponentCallbacks;)V
+    invoke-virtual {v0, p1}, Landroid/app/Application;->registerComponentCallbacks(Landroid/content/ComponentCallbacks;)V
 
     .line 139
     return-void
@@ -123,9 +123,9 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Lmiui/external/Application;
+    iget-object v0, p0, Lmiui/external/ApplicationDelegate;->r:Landroid/app/Application;
 
-    invoke-virtual {v0, p1}, Lmiui/external/Application;->unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
+    invoke-virtual {v0, p1}, Landroid/app/Application;->unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
 
     .line 149
     return-void

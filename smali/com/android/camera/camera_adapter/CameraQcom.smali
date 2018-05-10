@@ -3268,7 +3268,7 @@
     .line 361
     const-string/jumbo v1, "persist.camera.feature.restart"
 
-    invoke-static {v1, v0}, Lmiui/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
