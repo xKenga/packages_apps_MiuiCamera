@@ -218,7 +218,7 @@
     .line 431
     iget-object v1, p0, Lcom/android/camera/fragment/FragmentFilter$EffectStillItemHolder;->this$0:Lcom/android/camera/fragment/FragmentFilter;
 
-    invoke-static {v1}, Lcom/android/camera/fragment/FragmentFilter;->-get1(Lcom/android/camera/fragment/FragmentFilter;)Lmiui/view/animation/CubicEaseOutInterpolator;
+    invoke-static {v1}, Lcom/android/camera/fragment/FragmentFilter;->-get1(Lcom/android/camera/fragment/FragmentFilter;)Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     move-result-object v1
 
@@ -302,7 +302,7 @@
     .line 458
     iget-object v1, p0, Lcom/android/camera/fragment/FragmentFilter$EffectStillItemHolder;->this$0:Lcom/android/camera/fragment/FragmentFilter;
 
-    invoke-static {v1}, Lcom/android/camera/fragment/FragmentFilter;->-get1(Lcom/android/camera/fragment/FragmentFilter;)Lmiui/view/animation/CubicEaseOutInterpolator;
+    invoke-static {v1}, Lcom/android/camera/fragment/FragmentFilter;->-get1(Lcom/android/camera/fragment/FragmentFilter;)Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     move-result-object v1
 

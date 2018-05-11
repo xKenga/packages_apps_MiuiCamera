@@ -281,9 +281,9 @@
     iput-object v0, p0, Lcom/android/camera/ui/V9EdgeShutterView;->mPressInterpolator:Landroid/view/animation/Interpolator;
 
     .line 74
-    new-instance v0, Lmiui/view/animation/CubicEaseOutInterpolator;
+    new-instance v0, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
-    invoke-direct {v0}, Lmiui/view/animation/CubicEaseOutInterpolator;-><init>()V
+    invoke-direct {v0}, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;-><init>()V
 
     iput-object v0, p0, Lcom/android/camera/ui/V9EdgeShutterView;->mMoveInterpolator:Landroid/view/animation/Interpolator;
 

@@ -647,9 +647,9 @@
     iput-object v2, p0, Lcom/android/camera/ui/FocusView;->mActivity:Lcom/android/camera/Camera;
 
     .line 364
-    new-instance v2, Lmiui/view/animation/CubicEaseOutInterpolator;
+    new-instance v2, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
-    invoke-direct {v2}, Lmiui/view/animation/CubicEaseOutInterpolator;-><init>()V
+    invoke-direct {v2}, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;-><init>()V
 
     iput-object v2, p0, Lcom/android/camera/ui/FocusView;->mInterpolator:Landroid/view/animation/Interpolator;
 

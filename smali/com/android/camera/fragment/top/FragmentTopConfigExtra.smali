@@ -781,9 +781,9 @@
     invoke-virtual {v10, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
     .line 185
-    new-instance v1, Lmiui/view/animation/CubicEaseOutInterpolator;
+    new-instance v1, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
-    invoke-direct {v1}, Lmiui/view/animation/CubicEaseOutInterpolator;-><init>()V
+    invoke-direct {v1}, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;-><init>()V
 
     invoke-virtual {v10, v1}, Landroid/view/animation/AnimationSet;->setInterpolator(Landroid/view/animation/Interpolator;)V
 

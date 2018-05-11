@@ -1088,9 +1088,9 @@
     .line 120
     iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomPopupTips;->mZoomInOutAnimator:Landroid/animation/AnimatorSet;
 
-    new-instance v2, Lmiui/view/animation/QuadraticEaseOutInterpolator;
+    new-instance v2, Lcom/android/camera/aosp_porting/animation/QuadraticEaseOutInterpolator;
 
-    invoke-direct {v2}, Lmiui/view/animation/QuadraticEaseOutInterpolator;-><init>()V
+    invoke-direct {v2}, Lcom/android/camera/aosp_porting/animation/QuadraticEaseOutInterpolator;-><init>()V
 
     invoke-virtual {v1, v2}, Landroid/animation/AnimatorSet;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -2046,9 +2046,9 @@
 
     invoke-direct {v1, v2, v3}, Lcom/android/camera/animation/type/TranslateYOnSubscribe;-><init>(Landroid/view/View;I)V
 
-    new-instance v2, Lmiui/view/animation/BackEaseOutInterpolator;
+    new-instance v2, Lcom/android/camera/aosp_porting/animation/BackEaseOutInterpolator;
 
-    invoke-direct {v2}, Lmiui/view/animation/BackEaseOutInterpolator;-><init>()V
+    invoke-direct {v2}, Lcom/android/camera/aosp_porting/animation/BackEaseOutInterpolator;-><init>()V
 
     invoke-virtual {v1, v2}, Lcom/android/camera/animation/type/TranslateYOnSubscribe;->setInterpolator(Landroid/view/animation/Interpolator;)Lcom/android/camera/animation/type/BaseOnSubScribe;
 

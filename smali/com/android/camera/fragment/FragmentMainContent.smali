@@ -210,9 +210,9 @@
     .line 290
     iget-object v0, p0, Lcom/android/camera/fragment/FragmentMainContent;->mZoomInAnimator:Landroid/animation/AnimatorSet;
 
-    new-instance v1, Lmiui/view/animation/QuadraticEaseInOutInterpolator;
+    new-instance v1, Lcom/android/camera/aosp_porting/animation/QuadraticEaseInOutInterpolator;
 
-    invoke-direct {v1}, Lmiui/view/animation/QuadraticEaseInOutInterpolator;-><init>()V
+    invoke-direct {v1}, Lcom/android/camera/aosp_porting/animation/QuadraticEaseInOutInterpolator;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -241,9 +241,9 @@
     .line 293
     iget-object v0, p0, Lcom/android/camera/fragment/FragmentMainContent;->mZoomOutAnimator:Landroid/animation/AnimatorSet;
 
-    new-instance v1, Lmiui/view/animation/QuadraticEaseInOutInterpolator;
+    new-instance v1, Lcom/android/camera/aosp_porting/animation/QuadraticEaseInOutInterpolator;
 
-    invoke-direct {v1}, Lmiui/view/animation/QuadraticEaseInOutInterpolator;-><init>()V
+    invoke-direct {v1}, Lcom/android/camera/aosp_porting/animation/QuadraticEaseInOutInterpolator;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 

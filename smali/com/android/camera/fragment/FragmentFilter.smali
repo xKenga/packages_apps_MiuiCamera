@@ -26,7 +26,7 @@
 
 .field private mComponentConfigFilter:Lcom/android/camera/data/data/config/ComponentConfigFilter;
 
-.field private mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+.field private mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
 .field private mCurrentIndex:I
 
@@ -69,12 +69,12 @@
     return v0
 .end method
 
-.method static synthetic -get1(Lcom/android/camera/fragment/FragmentFilter;)Lmiui/view/animation/CubicEaseOutInterpolator;
+.method static synthetic -get1(Lcom/android/camera/fragment/FragmentFilter;)Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
     .locals 1
     .param p0, "-this"    # Lcom/android/camera/fragment/FragmentFilter;
 
     .prologue
-    iget-object v0, p0, Lcom/android/camera/fragment/FragmentFilter;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v0, p0, Lcom/android/camera/fragment/FragmentFilter;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     return-object v0
 .end method
@@ -1177,11 +1177,11 @@
     invoke-virtual {v3, v0}, Landroid/support/v7/widget/RecyclerView;->setItemAnimator(Landroid/support/v7/widget/RecyclerView$ItemAnimator;)V
 
     .line 124
-    new-instance v3, Lmiui/view/animation/CubicEaseOutInterpolator;
+    new-instance v3, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
-    invoke-direct {v3}, Lmiui/view/animation/CubicEaseOutInterpolator;-><init>()V
+    invoke-direct {v3}, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;-><init>()V
 
-    iput-object v3, p0, Lcom/android/camera/fragment/FragmentFilter;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iput-object v3, p0, Lcom/android/camera/fragment/FragmentFilter;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 125
     return-void

@@ -25,7 +25,7 @@
 
 .field private mBeautyPagerAdapter:Lcom/android/camera/fragment/FragmentBeauty$BeautyPagerAdapter;
 
-.field private mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+.field private mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
 .field private mViewPager:Lcom/android/camera/ui/NoScrollViewPager;
 
@@ -114,7 +114,7 @@
     move-result-object v2
 
     .line 253
-    iget-object v3, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v3, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 252
     invoke-virtual {v2, v3}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -160,7 +160,7 @@
     move-result-object v2
 
     .line 256
-    iget-object v3, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v3, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 255
     invoke-virtual {v2, v3}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -236,7 +236,7 @@
     move-result-object v2
 
     .line 278
-    iget-object v3, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v3, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 277
     invoke-virtual {v2, v3}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -435,11 +435,11 @@
     iput v1, v2, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 73
-    new-instance v2, Lmiui/view/animation/CubicEaseOutInterpolator;
+    new-instance v2, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
-    invoke-direct {v2}, Lmiui/view/animation/CubicEaseOutInterpolator;-><init>()V
+    invoke-direct {v2}, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;-><init>()V
 
-    iput-object v2, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iput-object v2, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 75
     const v2, 0x7f0a0032
@@ -858,7 +858,7 @@
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 189
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
@@ -892,7 +892,7 @@
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 199
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBeauty;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 

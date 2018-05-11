@@ -31,7 +31,7 @@
 
 .field private mComponentModuleList:Lcom/android/camera/data/data/global/ComponentModuleList;
 
-.field private mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+.field private mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
 .field private mEdgeHorizonScrollView:Lcom/android/camera/ui/EdgeHorizonScrollView;
 
@@ -69,7 +69,7 @@
 
 .field private mShutterButton:Lcom/android/camera/ui/CameraSnapView;
 
-.field private mSineEaseOut:Lmiui/view/animation/SineEaseOutInterpolator;
+.field private mSineEaseOut:Lcom/android/camera/aosp_porting/animation/SineEaseOutInterpolator;
 
 .field private mThumbnailImage:Landroid/widget/ImageView;
 
@@ -1341,18 +1341,18 @@
     iput-boolean v2, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mIsIntentAction:Z
 
     .line 202
-    new-instance v2, Lmiui/view/animation/CubicEaseOutInterpolator;
+    new-instance v2, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
-    invoke-direct {v2}, Lmiui/view/animation/CubicEaseOutInterpolator;-><init>()V
+    invoke-direct {v2}, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;-><init>()V
 
-    iput-object v2, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iput-object v2, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 203
-    new-instance v2, Lmiui/view/animation/SineEaseOutInterpolator;
+    new-instance v2, Lcom/android/camera/aosp_porting/animation/SineEaseOutInterpolator;
 
-    invoke-direct {v2}, Lmiui/view/animation/SineEaseOutInterpolator;-><init>()V
+    invoke-direct {v2}, Lcom/android/camera/aosp_porting/animation/SineEaseOutInterpolator;-><init>()V
 
-    iput-object v2, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mSineEaseOut:Lmiui/view/animation/SineEaseOutInterpolator;
+    iput-object v2, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mSineEaseOut:Lcom/android/camera/aosp_porting/animation/SineEaseOutInterpolator;
 
     .line 205
     invoke-virtual {p0}, Lcom/android/camera/fragment/FragmentBottomAction;->getContext()Landroid/content/Context;
@@ -3958,7 +3958,7 @@
     move-result-object v0
 
     .line 278
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mSineEaseOut:Lmiui/view/animation/SineEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mSineEaseOut:Lcom/android/camera/aosp_porting/animation/SineEaseOutInterpolator;
 
     .line 277
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -3992,7 +3992,7 @@
     move-result-object v0
 
     .line 281
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 280
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4022,7 +4022,7 @@
     move-result-object v0
 
     .line 284
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 283
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4061,7 +4061,7 @@
     move-result-object v0
 
     .line 288
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 287
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4093,7 +4093,7 @@
     move-result-object v0
 
     .line 291
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mSineEaseOut:Lmiui/view/animation/SineEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mSineEaseOut:Lcom/android/camera/aosp_porting/animation/SineEaseOutInterpolator;
 
     .line 290
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4129,7 +4129,7 @@
     move-result-object v0
 
     .line 294
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 293
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4216,7 +4216,7 @@
     move-result-object v0
 
     .line 321
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 320
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4250,7 +4250,7 @@
     move-result-object v0
 
     .line 324
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 323
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4280,7 +4280,7 @@
     move-result-object v0
 
     .line 327
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 326
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4319,7 +4319,7 @@
     move-result-object v0
 
     .line 331
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 330
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;
@@ -4364,7 +4364,7 @@
     move-result-object v0
 
     .line 335
-    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lmiui/view/animation/CubicEaseOutInterpolator;
+    iget-object v1, p0, Lcom/android/camera/fragment/FragmentBottomAction;->mCubicEaseOut:Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
     .line 334
     invoke-virtual {v0, v1}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;

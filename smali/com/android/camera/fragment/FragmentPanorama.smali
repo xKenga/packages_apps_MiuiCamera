@@ -201,9 +201,9 @@
     iput v0, p0, Lcom/android/camera/fragment/FragmentPanorama;->mMoveDirection:I
 
     .line 83
-    new-instance v0, Lmiui/view/animation/CubicEaseInOutInterpolator;
+    new-instance v0, Lcom/android/camera/aosp_porting/animation/CubicEaseInOutInterpolator;
 
-    invoke-direct {v0}, Lmiui/view/animation/CubicEaseInOutInterpolator;-><init>()V
+    invoke-direct {v0}, Lcom/android/camera/aosp_porting/animation/CubicEaseInOutInterpolator;-><init>()V
 
     iput-object v0, p0, Lcom/android/camera/fragment/FragmentPanorama;->mCubicEaseInOutInterpolator:Landroid/view/animation/Interpolator;
 

@@ -221,9 +221,9 @@
     move-result-object v2
 
     .line 50
-    new-instance v3, Lmiui/view/animation/CubicEaseInOutInterpolator;
+    new-instance v3, Lcom/android/camera/aosp_porting/animation/CubicEaseInOutInterpolator;
 
-    invoke-direct {v3}, Lmiui/view/animation/CubicEaseInOutInterpolator;-><init>()V
+    invoke-direct {v3}, Lcom/android/camera/aosp_porting/animation/CubicEaseInOutInterpolator;-><init>()V
 
     .line 48
     invoke-virtual {v2, v3}, Landroid/support/v4/view/ViewPropertyAnimatorCompat;->setInterpolator(Landroid/view/animation/Interpolator;)Landroid/support/v4/view/ViewPropertyAnimatorCompat;

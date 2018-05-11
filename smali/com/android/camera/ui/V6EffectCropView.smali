@@ -511,9 +511,9 @@
     iput v7, p0, Lcom/android/camera/ui/V6EffectCropView;->mRadius:I
 
     .line 96
-    new-instance v1, Lmiui/view/animation/CubicEaseOutInterpolator;
+    new-instance v1, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;
 
-    invoke-direct {v1}, Lmiui/view/animation/CubicEaseOutInterpolator;-><init>()V
+    invoke-direct {v1}, Lcom/android/camera/aosp_porting/animation/CubicEaseOutInterpolator;-><init>()V
 
     iput-object v1, p0, Lcom/android/camera/ui/V6EffectCropView;->mInterpolator:Landroid/view/animation/Interpolator;
 
