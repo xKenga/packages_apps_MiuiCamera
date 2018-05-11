@@ -5257,85 +5257,14 @@
 .end method
 
 .method public static final isAppLocked(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 8
+    .locals 1
     .param p0, "context"    # Landroid/content/Context;
     .param p1, "packageName"    # Ljava/lang/String;
 
     .prologue
-    const/4 v4, 0x0
-
-    .line 1813
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v5
-
-    .line 1814
-    const-string/jumbo v6, "access_control_lock_enabled"
-
-    const/4 v7, -0x1
-
-    .line 1813
-    invoke-static {v5, v6, v7}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v5
-
-    .line 1814
-    const/4 v6, 0x1
-
-    .line 1813
-    if-ne v5, v6, :cond_1
-
-    const/4 v0, 0x1
-
-    .line 1815
-    .local v0, "controlLock":Z
-    :goto_0
-    if-eqz v0, :cond_2
-
-    .line 1816
-    const-string/jumbo v5, "security"
-
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lmiui/security/SecurityManager;
-
-    .line 1817
-    .local v2, "sm":Lmiui/security/SecurityManager;
-    invoke-virtual {v2, p1}, Lmiui/security/SecurityManager;->getApplicationAccessControlEnabled(Ljava/lang/String;)Z
-
-    move-result v1
-
-    .line 1818
-    .local v1, "lockOn":Z
-    invoke-virtual {v2, p1}, Lmiui/security/SecurityManager;->checkAccessControlPass(Ljava/lang/String;)Z
-
-    move-result v3
-
-    .line 1819
-    .local v3, "unlocked":Z
-    if-eqz v1, :cond_0
-
-    xor-int/lit8 v4, v3, 0x1
-
-    :cond_0
-    return v4
-
-    .line 1813
-    .end local v0    # "controlLock":Z
-    .end local v1    # "lockOn":Z
-    .end local v2    # "sm":Lmiui/security/SecurityManager;
-    .end local v3    # "unlocked":Z
-    :cond_1
     const/4 v0, 0x0
 
-    .restart local v0    # "controlLock":Z
-    goto :goto_0
-
-    .line 1821
-    :cond_2
-    return v4
+    return v0
 .end method
 
 .method private static isBackCameraIntent(I)Z
