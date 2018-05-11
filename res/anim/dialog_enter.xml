@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:interpolator="@interpolator/decelerate_quart"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:duration="@integer/dialog_enter_duration" android:fromYDelta="100.0%p" android:toYDelta="0.0" />
+    <alpha android:duration="@integer/dialog_enter_duration" android:fromAlpha="0.0" android:toAlpha="1.0" />
+</set>

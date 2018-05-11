@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
+    <item android:drawable="@drawable/list_item_overstepped_light" android:top="-1.0px" />
+    <item>
+        <selector android:variablePadding="@bool/preference_item_bg_enable_variablePadding">
+            <item android:state_enabled="false" android:drawable="@drawable/preference_first_item_with_icon_bg_normal"   />
+            <item android:state_pressed="true" android:drawable="@drawable/preference_first_item_with_icon_bg_pressed"   />
+            <item android:drawable="@drawable/preference_first_item_with_icon_bg_normal"   />
+            <item android:state_enabled="false" android:drawable="@drawable/preference_middle_item_with_icon_bg_normal"   />
+            <item android:state_pressed="true" android:drawable="@drawable/preference_middle_item_with_icon_bg_pressed"   />
+            <item android:drawable="@drawable/preference_middle_item_with_icon_bg_normal"   />
+            <item android:state_enabled="false" android:drawable="@drawable/preference_last_item_with_icon_bg_normal"   />
+            <item android:state_pressed="true" android:drawable="@drawable/preference_last_item_with_icon_bg_pressed"   />
+            <item android:drawable="@drawable/preference_last_item_with_icon_bg_normal"   />
+            <item android:state_enabled="false" android:drawable="@drawable/preference_single_item_with_icon_bg_normal" />
+            <item android:state_pressed="true" android:drawable="@drawable/preference_single_item_with_icon_bg_pressed" />
+            <item android:drawable="@drawable/preference_single_item_with_icon_bg_normal" />
+        </selector>
+    </item>
+</layer-list>

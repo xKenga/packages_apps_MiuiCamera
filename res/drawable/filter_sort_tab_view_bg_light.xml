@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:miui="http://schemas.android.com/apk/res/miui">
+    <item android:state_pressed="false" android:drawable="@drawable/filter_sort_tab_view_bg_first_normal_light"  />
+    <item android:state_pressed="true" android:drawable="@drawable/filter_sort_tab_view_bg_first_pressed_light"  />
+    <item android:drawable="@drawable/filter_sort_tab_view_bg_first_normal_light"  />
+    <item android:state_pressed="false" android:drawable="@drawable/filter_sort_tab_view_bg_middle_normal_light"  />
+    <item android:state_pressed="true" android:drawable="@drawable/filter_sort_tab_view_bg_middle_pressed_light"  />
+    <item android:drawable="@drawable/filter_sort_tab_view_bg_middle_normal_light"  />
+    <item android:state_pressed="false" android:drawable="@drawable/filter_sort_tab_view_bg_last_normal_light"  />
+    <item android:state_pressed="true" android:drawable="@drawable/filter_sort_tab_view_bg_last_pressed_light"  />
+    <item android:drawable="@drawable/filter_sort_tab_view_bg_last_normal_light"  />
+</selector>
