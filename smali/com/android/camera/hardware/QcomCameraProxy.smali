@@ -657,7 +657,7 @@
     :cond_1
     const-string/jumbo v6, "camera_focus_success_flag"
 
-    invoke-static {v6, v5}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v6, v5}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v3
 

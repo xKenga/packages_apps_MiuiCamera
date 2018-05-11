@@ -3435,7 +3435,7 @@
 
     const/16 v20, 0x0
 
-    invoke-static/range {v19 .. v20}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static/range {v19 .. v20}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v13
 

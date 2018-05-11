@@ -736,7 +736,7 @@
     .line 74
     const-string/jumbo v0, "is_hongmi"
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -745,7 +745,7 @@
     .line 75
     const-string/jumbo v0, "is_xiaomi"
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -856,7 +856,7 @@
 
     const-string/jumbo v1, "support_camera_boost_brightness"
 
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -873,7 +873,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -889,7 +889,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -911,7 +911,7 @@
 
     const-string/jumbo v1, "enhance_beauty_with_hht"
 
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -928,7 +928,7 @@
 
     const/16 v1, 0x14
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -942,7 +942,7 @@
     .line 386
     const-string/jumbo v0, "camera_continuous_shot_callback_class"
 
-    invoke-static {v0}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -956,7 +956,7 @@
     .line 390
     const-string/jumbo v0, "camera_continuous_shot_callback_setter"
 
-    invoke-static {v0}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -991,7 +991,7 @@
     .line 479
     const-string/jumbo v2, "fp_nav_event_name_list"
 
-    invoke-static {v2}, Lmiui/util/FeatureParser;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
@@ -1079,7 +1079,7 @@
 
     .line 669
     :goto_1
-    invoke-static {v2, v1}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v2, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v1
 
@@ -1103,7 +1103,7 @@
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -1119,7 +1119,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1135,7 +1135,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1197,7 +1197,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1213,7 +1213,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1229,7 +1229,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1290,7 +1290,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1330,7 +1330,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
@@ -1402,7 +1402,7 @@
     const-string/jumbo v1, "is_front_video_quality_1080p"
 
     .line 291
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1424,7 +1424,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1442,7 +1442,7 @@
     const/4 v1, 0x0
 
     .line 425
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1474,7 +1474,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1490,7 +1490,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1506,7 +1506,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1555,7 +1555,7 @@
 
     const-string/jumbo v1, "vendor"
 
-    invoke-static {v1}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1575,7 +1575,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1591,7 +1591,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1607,7 +1607,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1633,7 +1633,7 @@
 
     const-string/jumbo v1, "vendor"
 
-    invoke-static {v1}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1659,7 +1659,7 @@
     const/4 v1, 0x0
 
     .line 112
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1699,7 +1699,7 @@
     const-string/jumbo v1, "is_new_hdr_param_key_used"
 
     .line 416
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1720,7 +1720,7 @@
 
     const-string/jumbo v1, "vendor"
 
-    invoke-static {v1}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1750,7 +1750,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1766,7 +1766,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1784,7 +1784,7 @@
 
     const-string/jumbo v1, "vendor"
 
-    invoke-static {v1}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1804,7 +1804,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1840,7 +1840,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1856,7 +1856,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1872,7 +1872,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1888,7 +1888,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1904,7 +1904,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1920,7 +1920,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1936,7 +1936,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1952,7 +1952,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1968,7 +1968,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -1984,7 +1984,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2000,7 +2000,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2016,7 +2016,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2032,7 +2032,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2048,7 +2048,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2090,7 +2090,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
@@ -2106,7 +2106,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2122,7 +2122,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2156,7 +2156,7 @@
     const-string/jumbo v1, "camera_supported_front_asd"
 
     :goto_0
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -2195,7 +2195,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2215,7 +2215,7 @@
     const-string/jumbo v1, "camera_supported_front_asd"
 
     :goto_0
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -2272,7 +2272,7 @@
     const-string/jumbo v1, "camera_supported_front_asd"
 
     :goto_0
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -2329,7 +2329,7 @@
     const-string/jumbo v1, "camera_supported_front_asd"
 
     :goto_0
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -2386,7 +2386,7 @@
     const-string/jumbo v1, "camera_supported_front_asd"
 
     :goto_0
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getInteger(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getInteger(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -2425,7 +2425,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2441,7 +2441,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2457,7 +2457,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2475,7 +2475,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2491,7 +2491,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2517,7 +2517,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2533,7 +2533,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2549,7 +2549,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2565,7 +2565,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2586,7 +2586,7 @@
     .line 399
     const-string/jumbo v1, "support_camera_magic_mirror"
 
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2604,7 +2604,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2620,7 +2620,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2636,7 +2636,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2652,7 +2652,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2678,7 +2678,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2694,7 +2694,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2710,7 +2710,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2726,7 +2726,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2742,7 +2742,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2780,7 +2780,7 @@
     .line 469
     const-string/jumbo v1, "camera_is_support_portrait_switch"
 
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2835,7 +2835,7 @@
 
     const-string/jumbo v2, "camera_support_portrait_zoom"
 
-    invoke-static {v2, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v2, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
@@ -2852,7 +2852,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2868,7 +2868,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2884,7 +2884,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2900,7 +2900,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2916,7 +2916,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2932,7 +2932,7 @@
     .line 260
     const-string/jumbo v1, "is_support_tele_asd_night"
 
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
@@ -2957,7 +2957,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2973,7 +2973,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -2989,7 +2989,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3011,7 +3011,7 @@
 
     const-string/jumbo v1, "is_udcf_portrait"
 
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3028,7 +3028,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3044,7 +3044,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3060,7 +3060,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3076,7 +3076,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3120,7 +3120,7 @@
 
     const-string/jumbo v1, "camera_udcf_portrait_need_rotation"
 
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3137,7 +3137,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3153,7 +3153,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3231,7 +3231,7 @@
     const-string/jumbo v1, "is_video_snapshot_size_limit"
 
     .line 336
-    invoke-static {v1, v0}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v0}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3253,7 +3253,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3308,7 +3308,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {v1, v2}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v1, v2}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
@@ -3347,7 +3347,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -3363,7 +3363,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 

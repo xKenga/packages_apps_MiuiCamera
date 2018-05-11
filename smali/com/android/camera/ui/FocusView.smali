@@ -568,7 +568,7 @@
     const/4 v1, 0x0
 
     .line 100
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getFloat(Ljava/lang/String;F)Ljava/lang/Float;
+    invoke-static {v0, v1}, Lcom/android/camera/aosp_porting/FeatureParser;->getFloat(Ljava/lang/String;F)Ljava/lang/Float;
 
     move-result-object v0
 
