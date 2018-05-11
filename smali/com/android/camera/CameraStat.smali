@@ -34,7 +34,7 @@
     .line 20
     const-string/jumbo v0, "ro.product.mod_device"
 
-    sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v1, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -279,7 +279,7 @@
     sput-boolean v1, Lcom/android/camera/CameraStat;->sIsCounterEventEnabled:Z
 
     .line 171
-    sget-boolean v1, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_INTERNATIONAL_BUILD:Z
 
     sput-boolean v1, Lcom/android/camera/CameraStat;->sIsAnonymous:Z
 

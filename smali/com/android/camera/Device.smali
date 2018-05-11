@@ -163,24 +163,24 @@
     const/4 v1, 0x0
 
     .line 18
-    sget-object v0, Lmiui/os/Build;->MODEL:Ljava/lang/String;
+    sget-object v0, Lcom/android/camera/aosp_porting/Build;->MODEL:Ljava/lang/String;
 
     sput-object v0, Lcom/android/camera/Device;->MODULE:Ljava/lang/String;
 
     .line 19
-    sget-boolean v0, Lmiui/os/Build;->IS_MITWO:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_MITWO:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_MI2:Z
 
     .line 20
-    sget-boolean v0, Lmiui/os/Build;->IS_MI2A:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_MI2A:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_MI2A:Z
 
     .line 21
     const-string/jumbo v0, "pisces"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -191,7 +191,7 @@
     .line 22
     const-string/jumbo v0, "cancro"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -199,7 +199,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-object v0, Lmiui/os/Build;->MODEL:Ljava/lang/String;
+    sget-object v0, Lcom/android/camera/aosp_porting/Build;->MODEL:Ljava/lang/String;
 
     const-string/jumbo v3, "MI 3"
 
@@ -221,17 +221,17 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_MI3:Z
 
     .line 24
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWO:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWO:Z
 
     if-eqz v0, :cond_3
 
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWO_A:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWO_A:Z
 
     xor-int/lit8 v0, v0, 0x1
 
     if-eqz v0, :cond_3
 
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWO_S:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWO_S:Z
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -239,7 +239,7 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_HM:Z
 
     .line 25
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWO_S:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWO_S:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_HM2S:Z
 
@@ -254,24 +254,24 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_HM2:Z
 
     .line 27
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWOS_LTE_MTK:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWOS_LTE_MTK:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_HM2S_LTE:Z
 
     .line 28
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWO_A:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWO_A:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_HM2A:Z
 
     .line 29
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_THREE:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_THREE:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_HM3:Z
 
     .line 30
     const-string/jumbo v0, "gucci"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -282,7 +282,7 @@
     .line 31
     const-string/jumbo v0, "hermes"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -293,7 +293,7 @@
     .line 32
     const-string/jumbo v0, "hennessy"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -304,7 +304,7 @@
     .line 33
     const-string/jumbo v0, "dior"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -315,7 +315,7 @@
     .line 34
     const-string/jumbo v0, "kenzo"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -326,7 +326,7 @@
     .line 35
     const-string/jumbo v0, "kate"
 
-    sget-object v3, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -335,13 +335,13 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_HM3B:Z
 
     .line 36
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWOX:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWOX:Z
 
     if-nez v0, :cond_0
 
     const-string/jumbo v0, "HM2014816"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -351,29 +351,29 @@
     sput-boolean v2, Lcom/android/camera/Device;->IS_H2XLTE:Z
 
     .line 37
-    sget-boolean v0, Lmiui/os/Build;->IS_HONGMI_TWOX_LC:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWOX_LC:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_H2X_LC:Z
 
     .line 38
-    sget-boolean v0, Lmiui/os/Build;->IS_MIFOUR:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_MIFOUR:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_MI4:Z
 
     .line 39
-    sget-boolean v0, Lmiui/os/Build;->IS_MIPAD:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_MIPAD:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_PAD1:Z
 
     .line 40
-    sget-boolean v0, Lmiui/os/Build;->IS_MIFIVE:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_MIFIVE:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_X5:Z
 
     .line 41
     const-string/jumbo v0, "leo"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -384,7 +384,7 @@
     .line 42
     const-string/jumbo v0, "ferrari"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -395,7 +395,7 @@
     .line 43
     const-string/jumbo v0, "ido"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -406,7 +406,7 @@
     .line 44
     const-string/jumbo v0, "aqua"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -417,7 +417,7 @@
     .line 45
     const-string/jumbo v0, "gemini"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -428,7 +428,7 @@
     .line 46
     const-string/jumbo v0, "gold"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -439,7 +439,7 @@
     .line 47
     const-string/jumbo v0, "capricorn"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -450,7 +450,7 @@
     .line 48
     const-string/jumbo v0, "natrium"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -461,7 +461,7 @@
     .line 49
     const-string/jumbo v0, "lithium"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -472,7 +472,7 @@
     .line 50
     const-string/jumbo v0, "scorpio"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -483,7 +483,7 @@
     .line 51
     const-string/jumbo v0, "libra"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -494,7 +494,7 @@
     .line 52
     const-string/jumbo v0, "land"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -505,7 +505,7 @@
     .line 53
     const-string/jumbo v0, "hydrogen"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -516,7 +516,7 @@
     .line 54
     const-string/jumbo v0, "helium"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -527,7 +527,7 @@
     .line 55
     const-string/jumbo v0, "omega"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -536,7 +536,7 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_H3C:Z
 
     .line 56
-    sget-object v0, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v0, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     const-string/jumbo v2, "nike"
 
@@ -547,7 +547,7 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_B6:Z
 
     .line 57
-    sget-object v0, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v0, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     const-string/jumbo v2, "mark"
 
@@ -558,7 +558,7 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_B5:Z
 
     .line 58
-    sget-object v0, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v0, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     const-string/jumbo v2, "prada"
 
@@ -569,7 +569,7 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_C5:Z
 
     .line 59
-    sget-object v0, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v0, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     const-string/jumbo v2, "mido"
 
@@ -582,7 +582,7 @@
     .line 60
     const-string/jumbo v0, "rolex"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -593,7 +593,7 @@
     .line 61
     const-string/jumbo v0, "sagit"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -604,7 +604,7 @@
     .line 62
     const-string/jumbo v0, "centaur"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -615,7 +615,7 @@
     .line 63
     const-string/jumbo v0, "achilles"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -626,7 +626,7 @@
     .line 64
     const-string/jumbo v0, "cactus"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -637,7 +637,7 @@
     .line 65
     const-string/jumbo v0, "cereus"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -648,7 +648,7 @@
     .line 66
     const-string/jumbo v0, "jason"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -659,7 +659,7 @@
     .line 67
     const-string/jumbo v0, "tiffany"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -670,7 +670,7 @@
     .line 68
     const-string/jumbo v0, "ulysse"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -681,7 +681,7 @@
     .line 69
     const-string/jumbo v0, "oxygen"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -692,7 +692,7 @@
     .line 70
     const-string/jumbo v0, "chiron"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -703,7 +703,7 @@
     .line 71
     const-string/jumbo v0, "ugg"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -714,7 +714,7 @@
     .line 72
     const-string/jumbo v0, "vince"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -725,7 +725,7 @@
     .line 73
     const-string/jumbo v0, "whyred"
 
-    sget-object v2, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v2, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -754,7 +754,7 @@
     .line 76
     const-string/jumbo v0, "hammerhead"
 
-    sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v1, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -765,7 +765,7 @@
     .line 77
     const-string/jumbo v0, "santoni"
 
-    sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v1, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -776,7 +776,7 @@
     .line 78
     const-string/jumbo v0, "ysl"
 
-    sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v1, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -787,7 +787,7 @@
     .line 79
     const-string/jumbo v0, "nitrogen"
 
-    sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+    sget-object v1, Lcom/android/camera/aosp_porting/Build;->DEVICE:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -796,12 +796,12 @@
     sput-boolean v0, Lcom/android/camera/Device;->IS_E4:Z
 
     .line 81
-    sget-boolean v0, Lmiui/os/Build;->IS_STABLE_VERSION:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_STABLE_VERSION:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_STABLE:Z
 
     .line 82
-    sget-boolean v0, Lmiui/os/Build;->IS_CM_CUSTOMIZATION_TEST:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_CM_CUSTOMIZATION_TEST:Z
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_CM_TEST:Z
 
@@ -1352,7 +1352,7 @@
 
     if-nez v1, :cond_0
 
-    sget-boolean v1, Lmiui/os/Build;->IS_HONGMI_TWOX:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWOX:Z
 
     if-nez v1, :cond_0
 
@@ -1687,7 +1687,7 @@
 
     if-nez v1, :cond_0
 
-    sget-boolean v1, Lmiui/os/Build;->IS_HONGMI_TWOX:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWOX:Z
 
     if-nez v1, :cond_0
 
@@ -2579,7 +2579,7 @@
     const/4 v0, 0x0
 
     .line 398
-    sget-boolean v1, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_INTERNATIONAL_BUILD:Z
 
     if-nez v1, :cond_0
 
@@ -3175,7 +3175,7 @@
 
     if-nez v1, :cond_0
 
-    sget-boolean v1, Lmiui/os/Build;->IS_HONGMI_TWOX:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_HONGMI_TWOX:Z
 
     if-nez v1, :cond_0
 

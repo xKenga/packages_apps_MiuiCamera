@@ -288,7 +288,7 @@
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 108
-    sget-boolean v1, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_INTERNATIONAL_BUILD:Z
 
     if-nez v1, :cond_2
 

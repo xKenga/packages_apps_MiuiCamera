@@ -158,7 +158,7 @@
     if-lt v1, v2, :cond_0
 
     .line 80
-    sget-boolean v1, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_INTERNATIONAL_BUILD:Z
 
     xor-int/lit8 v1, v1, 0x1
 
@@ -216,7 +216,7 @@
     if-lt v1, v2, :cond_0
 
     .line 98
-    sget-boolean v1, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_INTERNATIONAL_BUILD:Z
 
     xor-int/lit8 v1, v1, 0x1
 
@@ -275,7 +275,7 @@
     if-lt v0, v1, :cond_0
 
     .line 137
-    sget-boolean v0, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
+    sget-boolean v0, Lcom/android/camera/aosp_porting/Build;->IS_INTERNATIONAL_BUILD:Z
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -691,7 +691,7 @@
     if-lt v1, v2, :cond_0
 
     .line 119
-    sget-boolean v1, Lmiui/os/Build;->IS_INTERNATIONAL_BUILD:Z
+    sget-boolean v1, Lcom/android/camera/aosp_porting/Build;->IS_INTERNATIONAL_BUILD:Z
 
     xor-int/lit8 v1, v1, 0x1
 
