@@ -211,23 +211,23 @@
 
     .line 75
     .local v2, "userNotice":Landroid/text/SpannableStringBuilder;
-    new-instance v3, Lmiui/app/AlertDialog$Builder;
+    new-instance v3, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/android/camera/fragment/CtaNoticeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-direct {v3, v4}, Lmiui/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 76
     const v4, 0x7f0f029e
 
     .line 75
-    invoke-virtual {v3, v4}, Lmiui/app/AlertDialog$Builder;->setTitle(I)Lmiui/app/AlertDialog$Builder;
+    invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
-    invoke-virtual {v3, v2}, Lmiui/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Lmiui/app/AlertDialog$Builder;
+    invoke-virtual {v3, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
@@ -239,7 +239,7 @@
     const v5, 0x7f0f029b
 
     .line 75
-    invoke-virtual {v3, v5, v4}, Lmiui/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
+    invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
@@ -251,7 +251,7 @@
     const/high16 v5, 0x1040000
 
     .line 75
-    invoke-virtual {v3, v5, v4}, Lmiui/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
+    invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
 
@@ -269,18 +269,18 @@
     const/4 v5, 0x1
 
     .line 75
-    invoke-virtual {v3, v5, v4}, Lmiui/app/AlertDialog$Builder;->setCheckBox(ZLjava/lang/CharSequence;)Lmiui/app/AlertDialog$Builder;
+    invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setCheckBox(ZLjava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     .line 90
-    .local v0, "builder":Lmiui/app/AlertDialog$Builder;
-    invoke-virtual {v0}, Lmiui/app/AlertDialog$Builder;->create()Lmiui/app/AlertDialog;
+    .local v0, "builder":Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
     .line 91
-    .local v1, "dialog":Lmiui/app/AlertDialog;
+    .local v1, "dialog":Landroid/app/AlertDialog;
     return-object v1
 .end method
 
@@ -296,9 +296,9 @@
 
     move-result-object v1
 
-    check-cast v1, Lmiui/app/AlertDialog;
+    check-cast v1, Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Lmiui/app/AlertDialog;->getMessageView()Landroid/widget/TextView;
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->getMessageView()Landroid/widget/TextView;
 
     move-result-object v0
 

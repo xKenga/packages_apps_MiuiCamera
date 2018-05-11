@@ -52,9 +52,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lmiui/app/AlertDialog;
+    check-cast v0, Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Lmiui/app/AlertDialog;->isChecked()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isChecked()Z
 
     move-result v0
 
