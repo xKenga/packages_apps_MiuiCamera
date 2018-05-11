@@ -284,7 +284,7 @@
     const-class v8, Landroid/support/v7/widget/RecyclerView$Recycler;
 
     .line 112
-    invoke-static {v6, v7, v8}, Lmiui/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Lmiui/reflect/Field;
+    invoke-static {v6, v7, v8}, Lcom/android/camera/aosp_porting/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Lcom/android/camera/aosp_porting/reflect/Field;
 
     move-result-object v6
 
@@ -292,7 +292,7 @@
     iget-object v7, p0, Lcom/android/camera/ui/EffectPopup;->mRecyclerView:Landroid/support/v7/widget/RecyclerView;
 
     .line 112
-    invoke-virtual {v6, v7}, Lmiui/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v7}, Lcom/android/camera/aosp_porting/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -300,7 +300,7 @@
 
     iput-object v6, p0, Lcom/android/camera/ui/EffectPopup;->mRecycler:Landroid/support/v7/widget/RecyclerView$Recycler;
     :try_end_0
-    .catch Lmiui/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 118
     :goto_1
@@ -457,7 +457,7 @@
     move-exception v1
 
     .line 115
-    .local v1, "e":Lmiui/reflect/NoSuchFieldException;
+    .local v1, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;
     const-string/jumbo v6, "EffectPopup"
 
     const-string/jumbo v7, "no mRecycler field "

@@ -888,12 +888,12 @@
     const-string/jumbo v5, "(ILandroid/os/Looper;)V"
 
     .line 128
-    invoke-static {v4, v5}, Lmiui/reflect/Constructor;->of(Ljava/lang/Class;Ljava/lang/String;)Lmiui/reflect/Constructor;
+    invoke-static {v4, v5}, Lcom/android/camera/aosp_porting/reflect/Constructor;->of(Ljava/lang/Class;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Constructor;
 
     move-result-object v0
 
     .line 130
-    .local v0, "con":Lmiui/reflect/Constructor;
+    .local v0, "con":Lcom/android/camera/aosp_porting/reflect/Constructor;
     const/4 v4, 0x2
 
     new-array v4, v4, [Ljava/lang/Object;
@@ -922,7 +922,7 @@
 
     aput-object v5, v4, v6
 
-    invoke-virtual {v0, v4}, Lmiui/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4}, Lcom/android/camera/aosp_porting/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -966,7 +966,7 @@
 
     aput-object v5, v4, v6
 
-    invoke-virtual {v0, v4}, Lmiui/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4}, Lcom/android/camera/aosp_porting/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -998,11 +998,11 @@
 
     iput v4, p0, Lcom/android/camera/SurfaceTextureScreenNail;->currentFrameCount:I
     :try_end_0
-    .catch Lmiui/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 146
-    .end local v0    # "con":Lmiui/reflect/Constructor;
+    .end local v0    # "con":Lcom/android/camera/aosp_porting/reflect/Constructor;
     :cond_2
     :goto_0
     iget-object v4, p0, Lcom/android/camera/SurfaceTextureScreenNail;->mSurfaceTexture:Landroid/graphics/SurfaceTexture;
@@ -1147,7 +1147,7 @@
     move-exception v2
 
     .line 140
-    .local v2, "e":Lmiui/reflect/NoSuchMethodException;
+    .local v2, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     const-string/jumbo v4, "STScreenNail"
 
     const-string/jumbo v5, "SurfaceTexture Constructor NoSuchMethodException"
@@ -1157,7 +1157,7 @@
     goto :goto_0
 
     .line 171
-    .end local v2    # "e":Lmiui/reflect/NoSuchMethodException;
+    .end local v2    # "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     :cond_7
     iget-object v4, p0, Lcom/android/camera/SurfaceTextureScreenNail;->mSurfaceTexture:Landroid/graphics/SurfaceTexture;
 

@@ -190,12 +190,12 @@
 
     const-string/jumbo v6, "(Ljava/lang/String;)V"
 
-    invoke-static {v0, v5, v6}, Lmiui/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v0, v5, v6}, Lcom/android/camera/aosp_porting/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v4
 
     .line 162
-    .local v4, "pauseMethod":Lmiui/reflect/Method;
+    .local v4, "pauseMethod":Lcom/android/camera/aosp_porting/reflect/Method;
     const/4 v5, 0x1
 
     new-array v5, v5, [Ljava/lang/Object;
@@ -204,15 +204,15 @@
 
     aput-object p2, v5, v6
 
-    invoke-virtual {v4, v0, p1, v5}, Lmiui/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {v4, v0, p1, v5}, Lcom/android/camera/aosp_porting/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Lmiui/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 170
     .end local v0    # "cls":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
-    .end local v4    # "pauseMethod":Lmiui/reflect/Method;
+    .end local v4    # "pauseMethod":Lcom/android/camera/aosp_porting/reflect/Method;
     :goto_0
     return-void
 
@@ -236,7 +236,7 @@
     move-exception v3
 
     .line 166
-    .local v3, "e":Lmiui/reflect/NoSuchMethodException;
+    .local v3, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     const-string/jumbo v5, "VideoMTK"
 
     const-string/jumbo v6, "no method setParametersExtra"
@@ -246,7 +246,7 @@
     goto :goto_0
 
     .line 163
-    .end local v3    # "e":Lmiui/reflect/NoSuchMethodException;
+    .end local v3    # "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     :catch_2
     move-exception v1
 
@@ -313,12 +313,12 @@
 
     const-string/jumbo v6, "(II)Landroid/media/CamcorderProfile;"
 
-    invoke-static {v0, v5, v6}, Lmiui/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v0, v5, v6}, Lcom/android/camera/aosp_porting/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v4
 
     .line 95
-    .local v4, "method":Lmiui/reflect/Method;
+    .local v4, "method":Lcom/android/camera/aosp_porting/reflect/Method;
     const/4 v5, 0x2
 
     new-array v5, v5, [Ljava/lang/Object;
@@ -341,21 +341,21 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual {v4, v0, v6, v5}, Lmiui/reflect/Method;->invokeObject(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v0, v6, v5}, Lcom/android/camera/aosp_porting/reflect/Method;->invokeObject(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Landroid/media/CamcorderProfile;
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Lmiui/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object v5
 
     .line 100
     .end local v0    # "cls":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
-    .end local v4    # "method":Lmiui/reflect/Method;
+    .end local v4    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     :catch_0
     move-exception v2
 
@@ -381,7 +381,7 @@
     move-exception v3
 
     .line 99
-    .local v3, "e":Lmiui/reflect/NoSuchMethodException;
+    .local v3, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     const-string/jumbo v5, "VideoMTK"
 
     const-string/jumbo v6, "no method getProfile"
@@ -391,7 +391,7 @@
     goto :goto_0
 
     .line 96
-    .end local v3    # "e":Lmiui/reflect/NoSuchMethodException;
+    .end local v3    # "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     :catch_2
     move-exception v1
 
@@ -591,12 +591,12 @@
 
     const-string/jumbo v6, "(Landroid/media/MediaRecorder;)V"
 
-    invoke-static {v0, v5, v6}, Lmiui/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v0, v5, v6}, Lcom/android/camera/aosp_porting/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v4
 
     .line 120
-    .local v4, "pauseMethod":Lmiui/reflect/Method;
+    .local v4, "pauseMethod":Lcom/android/camera/aosp_porting/reflect/Method;
     const/4 v5, 0x1
 
     new-array v5, v5, [Ljava/lang/Object;
@@ -607,15 +607,15 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual {v4, v0, v6, v5}, Lmiui/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {v4, v0, v6, v5}, Lcom/android/camera/aosp_porting/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Lmiui/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 128
     .end local v0    # "cls":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
-    .end local v4    # "pauseMethod":Lmiui/reflect/Method;
+    .end local v4    # "pauseMethod":Lcom/android/camera/aosp_porting/reflect/Method;
     :goto_0
     return-void
 
@@ -639,7 +639,7 @@
     move-exception v3
 
     .line 124
-    .local v3, "e":Lmiui/reflect/NoSuchMethodException;
+    .local v3, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     const-string/jumbo v5, "VideoMTK"
 
     const-string/jumbo v6, "no method pause"
@@ -649,7 +649,7 @@
     goto :goto_0
 
     .line 121
-    .end local v3    # "e":Lmiui/reflect/NoSuchMethodException;
+    .end local v3    # "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     :catch_2
     move-exception v1
 

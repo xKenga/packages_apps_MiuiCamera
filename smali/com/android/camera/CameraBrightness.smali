@@ -394,12 +394,12 @@
 
     const-string/jumbo v4, "I"
 
-    invoke-static {v3, p1, v4}, Lmiui/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Field;
+    invoke-static {v3, p1, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Field;
 
     move-result-object v2
 
     .line 261
-    .local v2, "field":Lmiui/reflect/Field;
+    .local v2, "field":Lcom/android/camera/aosp_porting/reflect/Field;
     invoke-static {}, Lcom/android/camera/CameraAppImpl;->getAndroidContext()Landroid/content/Context;
 
     move-result-object v3
@@ -411,14 +411,14 @@
     .line 262
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v4}, Lmiui/reflect/Field;->getInt(Ljava/lang/Object;)I
+    invoke-virtual {v2, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result v4
 
     .line 261
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getIntArray(I)[I
     :try_end_0
-    .catch Lmiui/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v3
@@ -426,7 +426,7 @@
     return-object v3
 
     .line 265
-    .end local v2    # "field":Lmiui/reflect/Field;
+    .end local v2    # "field":Lcom/android/camera/aosp_porting/reflect/Field;
     :catch_0
     move-exception v0
 
@@ -458,10 +458,10 @@
     move-exception v1
 
     .line 264
-    .local v1, "e":Lmiui/reflect/NoSuchFieldException;
+    .local v1, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;
     const-string/jumbo v3, "CameraBrightness"
 
-    invoke-virtual {v1}, Lmiui/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -482,12 +482,12 @@
 
     const-string/jumbo v4, "I"
 
-    invoke-static {v3, p1, v4}, Lmiui/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Field;
+    invoke-static {v3, p1, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Field;
 
     move-result-object v2
 
     .line 248
-    .local v2, "field":Lmiui/reflect/Field;
+    .local v2, "field":Lcom/android/camera/aosp_porting/reflect/Field;
     invoke-static {}, Lcom/android/camera/CameraAppImpl;->getAndroidContext()Landroid/content/Context;
 
     move-result-object v3
@@ -499,14 +499,14 @@
     .line 249
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v4}, Lmiui/reflect/Field;->getInt(Ljava/lang/Object;)I
+    invoke-virtual {v2, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result v4
 
     .line 248
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getBoolean(I)Z
     :try_end_0
-    .catch Lmiui/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v3
@@ -514,7 +514,7 @@
     return v3
 
     .line 252
-    .end local v2    # "field":Lmiui/reflect/Field;
+    .end local v2    # "field":Lcom/android/camera/aosp_porting/reflect/Field;
     :catch_0
     move-exception v0
 
@@ -538,10 +538,10 @@
     move-exception v1
 
     .line 251
-    .local v1, "e":Lmiui/reflect/NoSuchFieldException;
+    .local v1, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;
     const-string/jumbo v3, "CameraBrightness"
 
-    invoke-virtual {v1}, Lmiui/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -561,12 +561,12 @@
 
     const-string/jumbo v4, "I"
 
-    invoke-static {v3, p1, v4}, Lmiui/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Field;
+    invoke-static {v3, p1, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Field;
 
     move-result-object v2
 
     .line 274
-    .local v2, "field":Lmiui/reflect/Field;
+    .local v2, "field":Lcom/android/camera/aosp_porting/reflect/Field;
     invoke-static {}, Lcom/android/camera/CameraAppImpl;->getAndroidContext()Landroid/content/Context;
 
     move-result-object v3
@@ -578,14 +578,14 @@
     .line 275
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v4}, Lmiui/reflect/Field;->getInt(Ljava/lang/Object;)I
+    invoke-virtual {v2, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result v4
 
     .line 274
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getInteger(I)I
     :try_end_0
-    .catch Lmiui/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v3
@@ -593,7 +593,7 @@
     return v3
 
     .line 278
-    .end local v2    # "field":Lmiui/reflect/Field;
+    .end local v2    # "field":Lcom/android/camera/aosp_porting/reflect/Field;
     :catch_0
     move-exception v0
 
@@ -619,10 +619,10 @@
     move-exception v1
 
     .line 277
-    .local v1, "e":Lmiui/reflect/NoSuchFieldException;
+    .local v1, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;
     const-string/jumbo v3, "CameraBrightness"
 
-    invoke-virtual {v1}, Lmiui/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 
@@ -642,12 +642,12 @@
 
     const-string/jumbo v4, "I"
 
-    invoke-static {v3, p1, v4}, Lmiui/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Field;
+    invoke-static {v3, p1, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Field;
 
     move-result-object v2
 
     .line 287
-    .local v2, "field":Lmiui/reflect/Field;
+    .local v2, "field":Lcom/android/camera/aosp_porting/reflect/Field;
     invoke-static {}, Lcom/android/camera/CameraAppImpl;->getAndroidContext()Landroid/content/Context;
 
     move-result-object v3
@@ -659,14 +659,14 @@
     .line 288
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v4}, Lmiui/reflect/Field;->getInt(Ljava/lang/Object;)I
+    invoke-virtual {v2, v4}, Lcom/android/camera/aosp_porting/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result v4
 
     .line 287
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getInteger(I)I
     :try_end_0
-    .catch Lmiui/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result v3
@@ -674,7 +674,7 @@
     return v3
 
     .line 291
-    .end local v2    # "field":Lmiui/reflect/Field;
+    .end local v2    # "field":Lcom/android/camera/aosp_porting/reflect/Field;
     :catch_0
     move-exception v0
 
@@ -700,10 +700,10 @@
     move-exception v1
 
     .line 290
-    .local v1, "e":Lmiui/reflect/NoSuchFieldException;
+    .local v1, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;
     const-string/jumbo v3, "CameraBrightness"
 
-    invoke-virtual {v1}, Lmiui/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/camera/aosp_porting/reflect/NoSuchFieldException;->getMessage()Ljava/lang/String;
 
     move-result-object v4
 

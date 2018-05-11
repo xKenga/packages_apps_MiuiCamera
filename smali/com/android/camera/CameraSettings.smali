@@ -6727,12 +6727,12 @@
 
     const-string/jumbo v5, "(I)V"
 
-    invoke-static {v2, v4, v5}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v2, v4, v5}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v1
 
     .line 1715
-    .local v1, "method":Lmiui/reflect/Method;
+    .local v1, "method":Lcom/android/camera/aosp_porting/reflect/Method;
     if-eqz v1, :cond_1
 
     .line 1716
@@ -6751,18 +6751,18 @@
     aput-object v3, v5, v6
 
     .line 1716
-    invoke-virtual {v1, v4, v0, v5}, Lmiui/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {v1, v4, v0, v5}, Lcom/android/camera/aosp_porting/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
 
     .line 1721
     .end local v0    # "im":Landroid/hardware/input/InputManager;
-    .end local v1    # "method":Lmiui/reflect/Method;
+    .end local v1    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .end local v2    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :cond_1
     return-void
 
     .line 1717
     .restart local v0    # "im":Landroid/hardware/input/InputManager;
-    .restart local v1    # "method":Lmiui/reflect/Method;
+    .restart local v1    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .restart local v2    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :cond_2
     invoke-static {p0}, Lcom/android/camera/CameraSettings;->getSystemEdgeMode(Landroid/content/Context;)I

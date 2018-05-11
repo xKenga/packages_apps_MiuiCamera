@@ -127,12 +127,12 @@
     move-result-object v4
 
     .line 444
-    invoke-static {v1, v2, v3, v4}, Lmiui/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Lmiui/reflect/Method;
+    invoke-static {v1, v2, v3, v4}, Lcom/android/camera/aosp_porting/reflect/Method;->of(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v0
 
     .line 447
-    .local v0, "realMethod":Lmiui/reflect/Method;
+    .local v0, "realMethod":Lcom/android/camera/aosp_porting/reflect/Method;
     if-eqz v0, :cond_0
 
     .line 448
@@ -140,10 +140,10 @@
 
     iget-object v2, p0, Lcom/android/camera/hardware/MTKCameraProxy$SameNameCallbackProxy;->mRealCallbackImpl:Ljava/lang/Object;
 
-    invoke-virtual {v0, v1, v2, p3}, Lmiui/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {v0, v1, v2, p3}, Lcom/android/camera/aosp_porting/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
 
     .line 451
-    .end local v0    # "realMethod":Lmiui/reflect/Method;
+    .end local v0    # "realMethod":Lcom/android/camera/aosp_porting/reflect/Method;
     :cond_0
     return-object v5
 .end method

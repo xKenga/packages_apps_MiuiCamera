@@ -190,12 +190,12 @@
 
     const-string/jumbo v5, "()V"
 
-    invoke-static {v3, v4, v5}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v3, v4, v5}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v2
 
     .line 87
-    .local v2, "method":Lmiui/reflect/Method;
+    .local v2, "method":Lcom/android/camera/aosp_porting/reflect/Method;
     const/4 v4, 0x0
 
     aget-object v4, v3, v4
@@ -204,13 +204,13 @@
 
     new-array v5, v5, [Ljava/lang/Object;
 
-    invoke-virtual {v2, v4, p1, v5}, Lmiui/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
+    invoke-virtual {v2, v4, p1, v5}, Lcom/android/camera/aosp_porting/reflect/Method;->invoke(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)V
     :try_end_0
-    .catch Lmiui/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 92
-    .end local v2    # "method":Lmiui/reflect/Method;
+    .end local v2    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .end local v3    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :goto_0
     return-void
@@ -234,7 +234,7 @@
     :catch_1
     move-exception v1
 
-    .local v1, "e":Lmiui/reflect/NoSuchMethodException;
+    .local v1, "e":Lcom/android/camera/aosp_porting/reflect/NoSuchMethodException;
     goto :goto_0
 .end method
 
@@ -574,12 +574,12 @@
 
     const-string/jumbo v4, "()I"
 
-    invoke-static {v2, v3, v4}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v2, v3, v4}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v1
 
     .line 104
-    .local v1, "method":Lmiui/reflect/Method;
+    .local v1, "method":Lcom/android/camera/aosp_porting/reflect/Method;
     if-eqz v1, :cond_0
 
     .line 105
@@ -591,7 +591,7 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    invoke-virtual {v1, v3, p1, v4}, Lmiui/reflect/Method;->invokeInt(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)I
+    invoke-virtual {v1, v3, p1, v4}, Lcom/android/camera/aosp_porting/reflect/Method;->invokeInt(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)I
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -600,7 +600,7 @@
     return v3
 
     .line 107
-    .end local v1    # "method":Lmiui/reflect/Method;
+    .end local v1    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .end local v2    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :catch_0
     move-exception v0
@@ -671,12 +671,12 @@
 
     const-string/jumbo v7, "(I)Lcom/nvidia/NvCamera;"
 
-    invoke-static {v5, v6, v7}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v5, v6, v7}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v4
 
     .line 50
-    .local v4, "method":Lmiui/reflect/Method;
+    .local v4, "method":Lcom/android/camera/aosp_porting/reflect/Method;
     if-eqz v4, :cond_0
 
     .line 51
@@ -698,7 +698,7 @@
 
     const/4 v8, 0x0
 
-    invoke-virtual {v4, v6, v8, v7}, Lmiui/reflect/Method;->invokeObject(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v6, v8, v7}, Lcom/android/camera/aosp_porting/reflect/Method;->invokeObject(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -710,14 +710,14 @@
 
     .line 60
     .end local v1    # "camera":Landroid/hardware/Camera;
-    .end local v4    # "method":Lmiui/reflect/Method;
+    .end local v4    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .end local v5    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :goto_0
     return-object v1
 
     .line 53
     .restart local v1    # "camera":Landroid/hardware/Camera;
-    .restart local v4    # "method":Lmiui/reflect/Method;
+    .restart local v4    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .restart local v5    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :cond_0
     const-string/jumbo v6, "NvidiaCameraProxy"
@@ -752,7 +752,7 @@
     goto :goto_0
 
     .line 55
-    .end local v4    # "method":Lmiui/reflect/Method;
+    .end local v4    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .end local v5    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :catch_0
     move-exception v2
@@ -1434,12 +1434,12 @@
 
     const-string/jumbo v4, "(Ljava/lang/String;)V"
 
-    invoke-static {v2, v3, v4}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lmiui/reflect/Method;
+    invoke-static {v2, v3, v4}, Lcom/android/camera/Util;->getMethod([Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Lcom/android/camera/aosp_porting/reflect/Method;
 
     move-result-object v1
 
     .line 68
-    .local v1, "method":Lmiui/reflect/Method;
+    .local v1, "method":Lcom/android/camera/aosp_porting/reflect/Method;
     if-eqz v1, :cond_1
 
     .line 69
@@ -1459,12 +1459,12 @@
 
     aput-object v5, v4, v6
 
-    invoke-virtual {v1, v3, p1, v4}, Lmiui/reflect/Method;->invokeObject(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3, p1, v4}, Lcom/android/camera/aosp_porting/reflect/Method;->invokeObject(Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 76
-    .end local v1    # "method":Lmiui/reflect/Method;
+    .end local v1    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .end local v2    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :goto_0
     sget-boolean v3, Lcom/android/camera/Util;->sIsDumpLog:Z
@@ -1479,7 +1479,7 @@
     return-void
 
     .line 71
-    .restart local v1    # "method":Lmiui/reflect/Method;
+    .restart local v1    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .restart local v2    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :cond_1
     :try_start_1
@@ -1514,7 +1514,7 @@
     goto :goto_0
 
     .line 73
-    .end local v1    # "method":Lmiui/reflect/Method;
+    .end local v1    # "method":Lcom/android/camera/aosp_porting/reflect/Method;
     .end local v2    # "ownerClazz":[Ljava/lang/Class;, "[Ljava/lang/Class<*>;"
     :catch_0
     move-exception v0
